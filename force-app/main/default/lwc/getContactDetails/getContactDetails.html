@@ -1,0 +1,112 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text"></lightning-input>
+            <div>
+
+                <lightning-input class="email" label="Enter Email" name="email"></lightning-input>
+            
+                <lightning-input class="firstname" label="Enter First Name" name="fName"></lightning-input>
+            
+                <lightning-input class="lastname" label="Enter Last Name" name="lName"></lightning-input>
+            
+                <br>
+            
+                    <lightning-button label="Click" onclick={handleClick} variant="brand"></lightning-button>
+            
+            </div>
+            
+            
+            
+            {da}
+            
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field with an initial value.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" value="ACME Inc."></lightning-input>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field with placeholder text.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" placeholder="type here..."></lightning-input>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field that is required.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" placeholder="type here..." required></lightning-input>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field that is disabled.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" placeholder="type here..." disabled></lightning-input>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field that is read-only.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" value="Stark Industries" readonly></lightning-input>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field that requires a minimum of 6 characters.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" placeholder="type here..." minlength="6"></lightning-input>
+        </div>
+    </div>
+
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            A text input field that cannot have more than 10 characters.
+        </h2>
+
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" placeholder="type here..." maxlength="10"></lightning-input>
+        </div>
+    </div>
+     <!-- Brand variant: Identifies the primary action in a group of buttons -->
+     <lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick} class="slds-m-left_x-small slds-m-right_xx-large"></lightning-button>
+      <!-- Brand variant: Identifies the primary action in a group of buttons -->
+      <lightning-button variant="success" label="cancel" title="Primary action" onclick={handleClick} class="slds-m-horizontal_large"></lightning-button>
+
+</template>

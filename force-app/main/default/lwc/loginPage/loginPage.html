@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="This is my first navigation file" icon-name="standard: standard91">
+
+        <header><b>User Login Form</b></header>
+    
+        <form>
+    
+          <div class="slds-p-around_medium lgc-bg">
+    
+             <lightning-input type="text" label="User Name" placeholder="type here..." required></lightning-input>
+    
+         </div>
+    
+         <div class="slds-p-around_medium lgc-bg">
+    
+           <lightning-input type="password" label="Password" placeholder="type here..." require></lightning-input>
+    
+          </div>
+    
+          <div>       
+            <lightning-button variant="Success" label="Submit" title="successful action" onclick = {submitClick} class="slds-m-left_x-small"></lightning-button>
+
+     
+
+            <lightning-button variant="Neutral" label="Cancel" title="NOn Primary action" onclick = {canceleClick} class="slds-m-left_x-small"></lightning-button>
+   
+        
+   
+            <lightning-button variant="Destructive" label="Sign Up" title="Destructive action" onclick = {signupClick} class="slds-m-left_x-small"></lightning-button>
+   
+         </div>
+   
+      
+   
+       </form>
+   
+       <div>
+   
+         <span class="psw">Forgot <a href="#">password?</a></span>
+   
+       </div>
+    </lightning-card>   
+      
+</template>

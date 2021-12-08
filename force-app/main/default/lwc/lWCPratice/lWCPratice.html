@@ -1,0 +1,56 @@
+<template>
+
+
+
+<lightning-card title="This is example for show and the hide"></lightning-card>
+  <h2 class="slds-show">show the source</h2>
+  <h2 class="slds-hide">Don't show the source</h2>
+  <lightning-button label="Nav" onclick={handlenav} variant ="success"></lightning-button>  
+
+        <lightning-button label="click" onclick={handleClick} variant ="success"></lightning-button>  
+        <template for:each={responseData} for:item="contact">
+          Email <p key={contact.id}>{contact.Email}</p>
+        </template>
+        
+        
+        <div class="slds-box">
+          <h2 class="header">Date and Time Formatting</h2>
+          <p><lightning-formatted-date-time value="1637663105616" year="2-digit" month="short" day="2-digit" hour="numeric"
+                                         weekday="long" era="short"></lightning-formatted-date-time></p>
+          <p><lightning-formatted-date-time value="1637663105616" year="numeric" month="numeric" day="numeric" hour="2-digit"
+                                          minute="2-digit" time-zone-name="short" hour12="true"></lightning-formatted-date-time></p>
+          <p><lightning-formatted-date-time value="1637663105616" year="numeric" month="numeric" day="numeric" hour="2-digit"
+                                          minute="2-digit" time-zone="UTC" time-zone-name="short" hour12="false"></lightning-formatted-date-time></p>
+      </div>
+
+      <div>
+        <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="4" padding="around-small">
+
+          <div class="slds-p-around_medium slds-text-align_center">                      
+
+          <lightning-input type="text" label="UserName" placeholder="Enter UserName" value={empObj.UserName} align="center" name="empUserName" onchange={empUsernameChange}></lightning-input>
+
+          </div>
+
+      </lightning-layout-item>
+
+      <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="4" padding="around-small">
+
+          <div class="slds-p-around_medium slds-text-align_center">                      
+
+          <lightning-input type="text" label="UserName" placeholder="Enter UserName" value={empObj.UserName} align="center" name="empUserName" onchange={empUsernameChange}></lightning-input>
+
+          </div>
+
+      </lightning-layout-item>
+      </div>
+            
+        
+</template>
+
+
+
+
+            
+  
+                        

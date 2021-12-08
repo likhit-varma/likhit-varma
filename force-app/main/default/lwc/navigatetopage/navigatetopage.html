@@ -1,0 +1,41 @@
+<template>
+    <lightning-card title="Navigation Service in LWC(Lightning Web Components)">
+
+        <lightning-card title="Navigate To Record Example">
+
+            <lightning-button label="New Opportunity" onclick={navigateToNewOpportunityPage} class="slds-m-vertical_x-large"></lightning-button>
+
+            <lightning-card title="Navigate To Views">
+                <lightning-button label="Account Recent list View" onclick={navigateToAccountListView}></lightning-button>
+                <lightning-button label="Account Related List" onclick={navigateToContactRelatedList}></lightning-button>
+                <lightning-button label="Navigate to Image" onclick={navigateToWebPage}></lightning-button>
+            </lightning-card>
+          
+</lightning-card>
+        <div>
+            <lightning-layout>
+            <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="4" padding="around-small">
+
+                <div class="slds-p-around_medium slds-text-align_center">                      
+
+                <lightning-input type="text" label="UserName" placeholder="Enter UserName" value={UserName} align="center" name="empUserName" onchange={empUsernameChange}></lightning-input>
+
+                </div>
+
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="4" padding="around-small">
+
+                <div class="slds-p-around_medium slds-text-align_center">                      
+
+                <lightning-input type="text" label="UserName" placeholder="Enter UserName" value={UserName} align="center" name="empUserName" onchange={empUsernameChange}></lightning-input>
+
+                </div>
+
+            </lightning-layout-item>
+        </lightning-layout>
+
+        </div>
+
+    </lightning-card>
+</template>
